@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de Bootstrap - Kevin Jonás Busto</title>
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <link rel="stylesheet" href="/css/estilos.css">
+     <script src="https://kit.fontawesome.com/405d5358c0.js" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Peliculas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index2.html">Series animadas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Año de lanzamiento
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item disabled text-danger" href="#">1980 - 1990</a></li>
+                        <li><a class="dropdown-item disabled text-danger" href="#">1991 - 2000</a></li>
+                        <li><a class="dropdown-item disabled text-danger" href="#">2001 - 2011</a></li>
+                        <li><a class="dropdown-item disabled text-danger" href="#">2011 - 2016</a></li>
+                        <li><a class="dropdown-item" href="#comics1">2011 - 2022</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="container-fluid p-0 m-0 d-flex justify-content-end">
+                    <!--INICIO DEL MODAL 1-->
+                    <div class="container m-0 p-0 w-auto">
+                      <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Contacto
+                      </button>
+                      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel1">Contacto</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="https://formspree.io/f/xjvlzjel" method="POST">
+                                <div class="mb-3">
+                                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" required></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Ventana</button>
+                                  <button type="sumbit" class="btn btn-primary">Enviar formulario</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--FIN DEL MODAL 1-->
+
+                    <!--INICIO DEL MODAL 2-->
+                    <div class="container m-0 p-0 w-auto">
+                      <button type="button" class="btn btn-danger mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Login
+                    </button>
+  
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel2">Login</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Mantener Sesión</label>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar Ventana</button>
+                                      <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                    </div>
+                                  </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                    <!--FIN DEL MODAL 2-->                 
+                </div>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        
+        <div class="container-fluid bg-dark pb-5">
+            <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+                <h1 class="text-light">Comics 2016 - 2022 (FALTA TERMINAR)</h1>
+            </div>
+            <div id="comics1" class="row justify-content-center">
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/ACTIONCOMICS_Cv1044_04411_DIGITAL_62a7ce1a2b8583.70245355.jpg?itok=5ALO-Nz6" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/05/WW_Cv788_78811_DIGITAL_62912194e74a42.39262153.jpg?itok=MWzWoGKv" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/05/DARKCRISIS_Cv1_00111_DIGITAL_03_628fb50dd210e9.52711684.jpg?itok=W75R0QmB" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/DCvV_KILLERS_Cv1_00111_DIGITAL_62a7ce58b95ef8.52482524.jpg?itok=PH-fgB6u" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/BMSMWF_Cv4_00411_DIGITAL_6297fa9b44c065.07646945.jpg?itok=_IuxLZfr" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/DSKINC_Cv10_01011_DIGITAL_62a7ce64cf2c04.29902875.jpg?itok=X3__yXo9" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/ROBIN_Cv15_01511_DIGITAL_62a7ce86ddd511.62491674.jpg?itok=dEKvNpmK" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/05/BMKT_Cv4_00411_DIGITAL_628fb4fe730696.86627744.jpg?itok=e6ogRvWX" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/05/TJL_Cv2_00211_DIGITAL_6291217ae303e0.28938911.jpg?itok=NRtpCcdq" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/FLS_Cv783_78311_DIGITAL_6297fb42ada6b1.33448771.jpg?itok=Wut2Mt_4" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/DTC_Cv1061_06111_DIGITAL_62a7ce7284ff01.79566579.jpg?itok=d9ToNyjf" class="card-img-top" alt="...">
+                </div>
+                <div class="col col-11 col-sm-5 col-md-3 col-lg-2 card p-1 m-1">
+                    <img src="https://www.dccomics.com/sites/default/files/styles/comics320x485/public/comic-covers/2022/06/BMBTWK_Cv4_00411_DIGITAL_62a7ce42851e86.25513377.jpg?itok=ngjZq-8Y" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-auto">
+      <div class="container-fluid p-0">
+        <div class="row mb-2 mt-4 mx-4">
+          <div class="col col-12 col-sm-12 col-md-6 col-lg-4">
+            <h6>Otras formas de Contacto:</h6>
+            <p><i class="fa-solid fa-location-dot"></i> Avenida Siempreviva 742, Springfield</p>
+            <p><i class="fa-solid fa-phone"></i> +01234567890</p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:agregar_correo@email.com">agregar_correo@email.com</a></p>
+            <p><i class="fa-brands fa-facebook"></i> Jonas</p>
+            <p><i class="fa-brands fa-instagram"></i> @Jonas</p>
+          </div>
+          <div class="col col-12 col-sm-6 col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
+            <h5 class="m-0 text-center">Proximamente agregare mas cosas, mas secciones y funcionalidades</h5>
+          </div>
+          <div class="container-fluid col col-12 col-sm-6 col-md-6 col-lg-4 d-flex justify-content-center">
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/DC_Comics_logo.png" alt="logo"class="img-fluid h-50 hidden-xl hidden-xxl hiddex-lg"> -->
+            <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/logo.png" alt="logo"class="img-fluid">            
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-primary py-2">
+        <h5 class="text-center text-light">Copyright - Busto Kevin Jonás - 2022</h5> 
+      </div>
+    </footer>
+       
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
